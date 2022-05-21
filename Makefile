@@ -462,6 +462,7 @@ ifneq ($(TARGET_WEB),1)
   CXX := g++
 else
   CC := emcc
+  CXX := em++
 endif
 ifeq ($(CXX_FILES),"")
   LD := $(CC)
